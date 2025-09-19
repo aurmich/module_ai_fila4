@@ -4,10 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\AI\Filament\Pages;
 
-<<<<<<< HEAD
-=======
 use BackedEnum;
->>>>>>> 7bf22f1 (.)
 use Filament\Forms\Components\FileUpload;
 use Filament\Actions\Action;
 use Filament\Forms;

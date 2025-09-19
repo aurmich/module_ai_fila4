@@ -5,21 +5,12 @@ declare(strict_types=1);
 namespace Modules\AI\Filament\Pages;
 
 use Filament\Schemas\Schema;
-<<<<<<< HEAD
-use Filament\Forms\Components\Textarea;
-use RuntimeException;
-use Filament\Actions\Action;
-use Filament\Facades\Filament;
-use Filament\Forms;
-use Filament\Forms\Concerns\InteractsWithForms;
-=======
 use BackedEnum;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Concerns\InteractsWithForms;
 use RuntimeException;
 use Filament\Actions\Action;
 use Filament\Facades\Filament;
->>>>>>> 7bf22f1 (.)
 use Filament\Forms\Contracts\HasForms;
 use Filament\Support\Exceptions\Halt;
 use Illuminate\Contracts\Auth\Authenticatable;
@@ -35,27 +26,16 @@ use Webmozart\Assert\Assert;
  */
 class Completion extends XotBasePage implements HasForms
 {
-<<<<<<< HEAD
-    use InteractsWithForms;
-
-    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-document-text';
-
-    protected string $view = 'ai::filament.pages.completion';
-=======
 
     protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-document-text';
     
     // protected string $view = 'ai::filament.pages.completion';
->>>>>>> 7bf22f1 (.)
 
     public ?array $completionData = [];
 
     public function mount(): void
     {
-<<<<<<< HEAD
-=======
         // $this->view = 'ai::filament.pages.completion';
->>>>>>> 7bf22f1 (.)
         $this->completionForm->fill();
     }
 

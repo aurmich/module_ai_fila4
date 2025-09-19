@@ -5,11 +5,7 @@ declare(strict_types=1);
 namespace Modules\AI\Actions;
 
 use Exception;
-<<<<<<< HEAD
-use function Codewithkyrian\Transformers\Pipelines\pipeline;
-=======
 // use function Codewithkyrian\Transformers\Pipelines\pipeline; // Package not installed
->>>>>>> 7bf22f1 (.)
 use Modules\AI\Contracts\SentimentAnalyzer;
 use Modules\AI\Datas\SentimentData;
 use Spatie\QueueableAction\QueueableAction;
@@ -148,11 +144,7 @@ class TransformersSentimentAnalyzer implements SentimentAnalyzer
                 throw new Exception('Pipeline function not found');
             }
 
-<<<<<<< HEAD
-            $pipe = pipeline('sentiment-analysis');
-=======
             $pipe = \Codewithkyrian\Transformers\Pipelines\pipeline('sentiment-analysis');
->>>>>>> 7bf22f1 (.)
             if (! is_callable($pipe)) {
                 throw new Exception('Failed to create sentiment analysis pipeline');
             }
